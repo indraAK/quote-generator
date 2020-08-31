@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600&display=swap");
+
+* {
+   box-sizing: inherit;
+}
+
+html {
+   box-sizing: border-box;
+   font-size: 62.5%;
+}
+
+body {
+   background-color: rebeccapurple;
+   color: #424242;
+   margin: 0;
+   min-height: 100vh;
+   font-family: "Nunito Sans", sans-serif;
+   font-weight: 400;
+   font-size: 1.6rem;
+   line-height: 1.6;
+   display: grid;
+   place-items: center;
+   width: 100%;
+}
+
+.container {
+   width: 93%;
+   margin: 0 auto;
+}
+
+.quote-container {
+   text-align: center;
+   max-width: 768px;
+   margin: 0 auto;
+   padding: 20px 30px;
+   border-radius: 5px;
+   background-image: linear-gradient(to left, #f4f4f4, #fafafa);
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.quote-text {
+   font-size: 2rem;
+}
+
+.fa-quote-left {
+   font-size: 3rem;
+   color: #dbdbdb;
+}
+
+.quote-author {
+   margin: 15px 0 50px;
+}
+
+.quote-author h3 {
+   font-size: 2.3rem;
+   font-weight: 300;
+   font-style: italic;
+   color: #747474;
+   letter-spacing: 1px;
+}
+
+.button-container {
+   margin-top: 30px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.btn {
+   cursor: pointer;
+   outline: 0;
+   border: 1px solid transparent;
+   border-radius: 5px;
+   user-select: none;
+   -webkit-user-select: none;
+   font-family: inherit;
+   font-size: 14px;
+   letter-spacing: 1px;
+   display: inline-block;
+   padding: 10px 13px;
+   text-align: center;
+   transition: background 0.2s ease-in, box-shadow 0.2s ease-in;
+}
+
+.btn:active {
+   transform: translateY(1px);
+}
+
+.btn-newquote {
+   background: #262b40;
+   color: #fff;
+}
+
+.btn-newquote:hover {
+   background: #181b28;
+   border-color: #131620;
+}
+
+.btn-newquote:focus {
+   background: #181b28;
+   box-shadow: 0 0 0 0.2rem rgba(71, 75, 93, 0.5);
+}
+
+.btn-twitter {
+   background: #007bff;
+   color: #fff;
+}
+
+.btn-twitter:hover {
+   background: #0174f0;
+   border-color: #0174f0;
+}
+
+.btn-twitter:focus {
+   background: #0174f0;
+   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Loader */
+.loader {
+   width: 70px;
+   height: 70px;
+   border-radius: 50%;
+   border: 7px solid #f4f4f4;
+   border-top-color: #181b28;
+   animation: spin 0.8s linear infinite;
+   margin: 0 auto;
+}
+
+@keyframes spin {
+   from {
+      transform: rotate(0deg);
+   }
+
+   to {
+      transform: rotate(360deg);
+   }
+}
+
+@media screen and (max-width: 568px) {
+   .quote-text {
+      font-size: 1.5rem;
+   }
+
+   .quote-author h3 {
+      font-size: 1.8rem;
+   }
+
+   .btn {
+      font-size: 12px;
+      letter-spacing: 1px;
+      padding: 7px 10px;
+   }
+}
